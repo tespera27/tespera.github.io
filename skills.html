@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills of Mr. Espera</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="logo1.gif"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="education.html">Education</a></li>
+                    <li><a href="work.html">Work Experiences</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Mr. Espera's Skills</h1>
+
+<!--------My Skills---------->
+<section class="skills">
+    <h1></h1>
+    <div class="row">
+        <div class="skills-col">
+            <h3>FAST LEARNER</h3>
+            <p>Mr. Espera is embodies the skills of being a strategic thinker <br>and a good listener and applies to him to learning quickly.</p>
+        </div>
+        <div class="skills-col">
+            <h3>SELF MOTIVATION</h3>
+            <p>It's our internal drive to achieve, produce, develop, and keep moving forward.</p>
+        </div>
+        <div class="skills-col">
+            <h3>DETERMINATION and PERSISTENCE</h3>
+            <p>I made the decision to go to college. I got to college but then encountered <br>difficulty, much of it self-imposed!</p>
+        </div>
+    </div>
+    <img src="skills.gif">
+
+</section>
+
+
+<!----------JavaScript for Toggle Menu----------->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+    
+</body>
+</html>

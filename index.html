@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="logo1.gif"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>    
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="education.html">Education</a></li>
+                    <li><a href="work.html">Work Experiences</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+    <div class="text-box">
+        <h1>HOLA!</h1>
+        <p>I'm Teodoro Espera Jr. <br>I am studying in Doña Carmen Denia National High School <br>This is pure coded developed by me.</p>
+        <a href="" class="hero-btn">Learn more about MR. ESPERA</a>
+</div>
+        
+</section>
+
+<!---------Words of Wisdom----------->
+
+<section class="wow">
+    <h1>Words of Wisdom from Mr. Espera</h1>
+    <p>Work smarter, Not harder.</p>
+
+    <div class="row">
+        <div class="wow-col">
+            <h3>KEY TO SUCCESS</h3>
+            <p>Failure is an option.</p>
+        </div>
+        <div class="wow-col">
+            <h3>DREAMS</h3>
+            <p>Aim for your dreams, but don't lose yourself along the way.</p>
+        </div>
+        <div class="wow-col">
+            <h3>WALKTHROUGH</h3>
+            <p>The journey to enlightenment doesn't end when you graduate, it is only just beginning.</p>
+        </div>
+    </div>
+
+</section>
+
+<section class="goals">
+    <h1>GOALS</h1>
+    <p>My goals are to improve my vocabulary, Learn more programming language, and not the best but to be a better programmer.</p>
+
+    <div class="goals-col">
+        <img src="brain1.png">
+        <div class="layer">
+            <h3>VOCABULARY</h3>
+        </div>
+    </div>
+    <div class="goals-col">
+        <img src="prolang1.png">
+        <div class="layer">
+            <h3>PROGRAMMING LANGUAGES</h3>
+        </div>
+    </div>
+    <div class="goals-col">
+        <img src="programmer1.png">
+        <div class="layer">
+            <h3>BETTER PROGRAMMER</h3>
+        </div>
+    </div>
+</section>
+
+<!----------JavaScript for Toggle Menu----------->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+    
+</body>
+</html>
